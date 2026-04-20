@@ -55,8 +55,12 @@ const include_plugin = (md, options) => {
 
         // check if child file exists or if there is a circular reference
         if (!fs.existsSync(filePath)) {
-          // child file does not exist
-          errorMessage = options.notFoundMessage.replace('{{FILE}}', filePath);
+          // try from the previous rootdir, in case the include path is absolute from the root of the project
+          filePath = path.resolve(options.getRootDir(options), includePath);
+          if (!fs.existsSync(filePath)) {
+            // child file does not exist
+            errorMessage = options.notFoundMessage.replace('{{FILE}}', filePath);
+          }
         } else if (filesProcessed.indexOf(filePath) !== -1) {
           // reference would be circular
           errorMessage = options.circularMessage.replace('{{FILE}}', filePath).replace('{{PARENT}}', parentFilePath);

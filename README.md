@@ -1,9 +1,5 @@
 # markdown-it-include
 
-[![Build Status](https://img.shields.io/travis/camelaissani/markdown-it-include/master.svg?style=flat)](https://travis-ci.org/camelaissani/markdown-it-include)
-[![NPM version](https://img.shields.io/npm/v/markdown-it-include.svg?style=flat)](https://www.npmjs.org/package/markdown-it-include)
-[![Coverage Status](https://img.shields.io/coveralls/camelaissani/markdown-it-include/master.svg?style=flat)](https://coveralls.io/r/camelaissani/markdown-it-include?branch=master)
-
 Markdown-it plugin which adds the ability to include markdown fragment files.
 
 ## Install
@@ -11,8 +7,7 @@ Markdown-it plugin which adds the ability to include markdown fragment files.
 node.js, browser:
 
 ```bash
-npm install markdown-it-include --save
-bower install markdown-it-include --save
+npm install https://github.com/SofaComplianceRobotics/markdown-it-include
 ```
 
 ## Use
@@ -179,4 +174,4 @@ This purposefully doesn't conform to any spec or discussion related to CommonMar
 
 ## License
 
-[MIT](https://github.com/camelaissani/markdown-it-include/LICENSE)
+[MIT](https://github.com/SofaComplianceRobotics/markdown-it-include/LICENSE)

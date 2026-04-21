@@ -1,6 +1,2 @@
 /.github
-support/
-.nyc_output
-coverage/
-Makefile
 .*
